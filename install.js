@@ -1,13 +1,13 @@
 module.exports = {
   "cmds": {
     "win32": {
-      "nvidia": "pip install torch torchvision torchaudio xformers --index-url https://download.pytorch.org/whl/cu121",
+      "nvidia": "pip install torch torchvision torchaudio xformers --index-url https://download.pytorch.org/whl/cu118",
       "amd": "pip install torch-directml",
       "cpu": "pip install torch torchvision torchaudio"
     },
     "darwin": "pip install torch torchvision torchaudio",
     "linux": {
-      "nvidia": "pip install torch torchvision torchaudio xformers --index-url https://download.pytorch.org/whl/cu121",
+      "nvidia": "pip install torch torchvision torchaudio xformers --index-url https://download.pytorch.org/whl/cu118",
       "amd": "pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.7",
       "cpu": "pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu"
     }
