@@ -4,8 +4,11 @@ module.exports = {
     "method": "shell.run",
     "params": {
       "path": "app",
-      "venv": "env",
-      "message": "python app.py",
+      "conda": "env",
+      "message": [
+        "nvcc --version",
+        "python app.py",
+      ],
       "on": [{ "event": "/http:\/\/[0-9.:]+/", "done": true }]
     }
   }, {
