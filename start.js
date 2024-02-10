@@ -7,7 +7,7 @@ module.exports = async (kernel) => {
         "path": "app",
         "conda": "env",
         "env": {
-          "CUDA_HOME": "{{path.resolve(cwd, 'env')}}"
+          "CUDA_HOME": "{{path.resolve(cwd, 'app', 'env')}}"
         },
         "message": [
           "{{platform === 'win32' ? 'set' : 'env'}}",
