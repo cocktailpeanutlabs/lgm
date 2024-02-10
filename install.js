@@ -29,6 +29,7 @@ module.exports = {
       "path": "app",
       "message": [
         "{{(platform === 'darwin' ? self.cmds.darwin : (['nvidia', 'amd'].includes(gpu) ? self.cmds[platform][gpu] : self.cmds[platform].cpu))}}",
+        "pip install opencv-python",
         "pip install -r requirements.txt",
         "conda install -y cudnn libzlib-wapi -c conda-forge",
         "conda install -y cuda -c nvidia/label/cuda-11.8.0"
