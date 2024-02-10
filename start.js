@@ -6,6 +6,7 @@ module.exports = {
       "path": "app",
       "conda": "env",
       "message": [
+        "{{platform === 'win32' ? 'set' : 'env'}}",
         "nvcc --version",
         "python app.py",
       ],
