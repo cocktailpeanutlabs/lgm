@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: "1.1",
+  version: "3.0",
   title: "[NVIDIA GPU ONLY] LGM",
   description: "LGM: Large Multi-View Gaussian Model for High-Resolution 3D Content Creation https://huggingface.co/spaces/ashawkey/LGM",
   icon: "icon.gif",
